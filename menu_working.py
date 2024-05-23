@@ -154,8 +154,8 @@ while place_order:
                     total_cost = 0
                     for item in order_list:
                         item_cost = item['Price'] * item['Quantity']
-                    total_cost += item_cost
-                    print(f"{item['Quantity']} x {item['Item name']} @ ${item['Price']:.2f} each = ${item_cost:.2f}")
+                        total_cost += item_cost
+                        print(f"{item['Quantity']} x {item['Item name']} @ ${item['Price']:.2f} each = ${item_cost:.2f}")
                     print(f"Total cost: ${total_cost:.2f}")
                     print("Thank you for your order!")
                     print("Please come back and see us!!!")
@@ -165,5 +165,3 @@ while place_order:
             print("Invalid input, please enter a number.")
     else:
         print("Invalid menu number.")
-else:
-    print("Have a great day!")
